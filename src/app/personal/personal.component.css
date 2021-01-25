@@ -1,0 +1,73 @@
+p.designation {
+    border-right: solid 3px rgb(255, 255, 255);
+    white-space: nowrap;
+    overflow: hidden;    
+    /* font-family: 'Source Code Pro', monospace;   */
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+  }
+  h1.name  {
+      border-right: solid 3px rgb(255, 255, 255);
+      white-space: nowrap;
+      overflow: hidden;    
+      /* font-family: 'Source Code Pro', monospace;   */
+      font-size: 28px;
+      color: rgb(255, 255, 255);
+    }
+  /* Animation */
+  h1.name {
+     
+  
+      animation: animated-h 2s steps(29,end) 1s 1 normal both,
+                 animated-cursor 1000ms steps(29,end) infinite;
+    }
+  p.designation {
+    animation: animated-text 2s steps(29,end) 1s 1 normal both,
+               animated-cursor 1000ms steps(29,end) infinite;
+  }
+  .text{
+    
+   
+  }
+  /* text animation */
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width:330px;}
+  }
+  @keyframes animated-h{
+      from{width: 0;}
+      to{width:471px;}
+    }
+  
+  /* cursor animations */
+  
+  @keyframes animated-cursor{
+    from{border-right-color: rgba(0, 255, 255, 0.842);}
+    to{border-right-color: transparent;}
+  }
+  .content{
+      background-image: url("../../assets/sliders1-1.png");
+      object-fit: cover;
+     
+      width: 100%;
+      max-width: 1907px;
+      height: 840px;
+      overflow-x: hidden;
+  
+      /* width: auto; */
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .aboutme{
+      display: flex;
+      flex-wrap: wrap;
+      width: 196%;
+      margin: auto;
+      margin-top: 20px;
+      justify-content: space-between;
+  
+      /* font-family: 'Source Code Pro', monospace;   */
+      font-size: 18px;
+      color: rgb(0, 255, 255);
+  }
