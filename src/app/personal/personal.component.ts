@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { JSONService } from '../json.service';
 
 @Component({
   selector: 'app-personal',
@@ -6,11 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./personal.component.css']
 })
 export class PersonalComponent implements OnInit {
-   showMe:string=''
-   
-  constructor() {
+  showMe:string=''
+  intrest:any[]
+  myinfo:any
+  education:any[]
+  constructor(private json:JSONService) {
+    this.intrest=this.json.intrest
+    this.myinfo=this.json.myinfo
+    this.education=this.json.education
     setTimeout(() => {
-      this.showMe = 'Enthusiastic technical professional with complete understanding of entire software development lifecycle. Known for having talents in Frontend as well as Backend';
+      this.showMe=this.myinfo.aboutme;
  }, 3250)
    }
 

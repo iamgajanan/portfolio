@@ -1,1 +1,40 @@
-<p>professional works!</p>
+
+
+<div class="container backgroundimg">
+    <div class="row content">
+      <div class="col-sm-7">
+        <div class="card" >
+            <div class="card-body">
+              <h4 class="card-subtitle mb-2">Work Experience</h4>
+              <span *ngFor="let data of workexp"><br>
+                <h5 class="card-subtitle mb-2">{{data.company}}</h5>
+                <h6 class="card-title">{{data.designation}}</h6>
+                <p class="card-text">{{data.description}} </p>
+              </span>
+            </div>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="card" >
+            <div class="card-body">
+              <h4 class="card-subtitle mb-2">Personal Projects</h4>
+              <div *ngFor="let project of projects">
+                <a href="{{project.link}}"><h6 class="card-title">{{project.name}}</h6></a>
+              </div>
+            </div>
+        </div>
+        <div class="row content">
+          <div class="col-sm-12">
+            <div class="card" >
+                <div class="card-body">
+                  <h4 class="card-subtitle mb-2">SKILLS</h4>
+                  <span *ngFor="let skill of skills">
+                      <button type="button" class="btn btn-outline-info">{{skill}}</button>&nbsp;&nbsp;&nbsp;
+                  </span>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

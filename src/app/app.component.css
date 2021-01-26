@@ -4,10 +4,6 @@ body{
   padding: 40px;
   background-color: #ffffff;  
 }
-
-
-
-
 .footer {
     position: fixed;
     left: 0;
@@ -24,5 +20,4 @@ body{
  .rightreserve{
      margin-top: 50px;
     text-align: right; 
-    
  }

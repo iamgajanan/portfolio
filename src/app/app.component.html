@@ -1,22 +1,20 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">GS</a>
+      <a class="navbar-brand"routerLink="/">GS</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
         <span class="navbar-text">
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page"routerLink="/">Personal</a>
+                <a class="nav-link" aria-current="page"routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Personal</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"  routerLink="/professional">Professional</a>
+                <a class="nav-link"  routerLink="/professional" routerLinkActive="active">Professional</a>
               </li>
             </ul>
-      </div>
-
+         </div>
         </span>
     </div>
   </nav>
@@ -26,21 +24,13 @@
 <div class="footer">
   <div class="col-md-6 ">
     <span class="rightreserve"> Since ©2021. All rights reserved.</span>
-
     <span class="social">
-
         <a href="https://www.facebook.com/gajanan.shinde"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;
         <a href="https://www.instagram.com/iamgajanan/"><i class="fa fa-instagram"></i></a>&nbsp;&nbsp;
         <a href="https://www.linkedin.com/in/gajanan-shinde-5a207a164/" ><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;
         <a href="https://twitter.com/iamgajanan" ><i class="fa fa-twitter"></i></a>
-      </span>
-
-
-      <!-- <div class="col-md-6 text-center text-lg-right mt-4 mt-lg-0"> -->
-        
-      <!-- </div> -->
+    </span>
   </div>
-  
 </div>
 
 
