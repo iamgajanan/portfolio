@@ -1,3 +1,23 @@
+# Project Name
+
+Gajanan Shinde Portfolio 
+
+# Description
+
+Portfolio consist of two sections Personal and Professional.
+Personal Section Consist of Some personal information like about me, contact ,intrest and education while,
+Professional Section consist of work experience and personal projects with skills
+
+# Table of Contents
+
+Basically there are two sections with navigation
+
+# Installations
+
+angular cli version 11.0.5
+bootstrap 5.0.0 beta for layout and other requirement
+font-awesome 4.7.0 for icons
+
 # Portfolio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
